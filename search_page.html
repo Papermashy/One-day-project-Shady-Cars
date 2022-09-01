@@ -32,12 +32,17 @@
     <br>
     <h1>Enter a license plate</h1>
     <br>
-    <input type="text">
-    <button class="button">Get Car</button>
+    <input type="text" id="license">
+    <button class="button" onclick="get_one_car">Get Car</button>
     <button class="button">Get All Cars</button>
     <script>
         function get_one_car(){
+            license = document.getElementById("license").value
+            url = new URL(`http://127.0.0.1:8500/car?license=${license}`)
 
+            let res = await fetch(url);
+
+            console.log(res)
         }
 
         function get_all_cars(){

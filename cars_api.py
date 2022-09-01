@@ -11,14 +11,14 @@ date_of_sale date, image_url text)""")
 
 con.commit()
 
-# '''
-# cur.execute("""insert into cars values ('01', 'BMW', 'M3', 'Red', '2020', 'YX26 SZZ', 'Birmingham', 'Fred Bigman',
-# '10000.50', 'False', '15000,75', 'Tony Soprano', '26-05-1995', "")""")
-# cur.execute("""insert into cars values ('02', 'Ford', 'Wrangler', 'Blue', '2018', 'YX26 SZG', 'Colchester', 'Ted Bundy',
-# '10000.50', 'False', '15000,75', 'Tony Soprano', '28-05-1995', "")""")
-# cur.execute("""insert into cars values ('03', 'Volkswagon', 'Golf', 'Black', '2021', 'YX46 SZZ', 'London', 'Obama',
-# '10000.50', 'False', '15000,75', 'Tony Soprano', '27-05-1995', "")""")
-# '''
+
+cur.execute("""insert into cars values ('01', 'BMW', 'M3', 'Red', '2020', 'YX26 SZZ', 'Birmingham', 'Fred Bigman',
+'10000.50', 'False', '15000,75', 'Tony Soprano', '26-05-1995', "")""")
+cur.execute("""insert into cars values ('02', 'Ford', 'Wrangler', 'Blue', '2018', 'YX26 SZG', 'Colchester', 'Ted Bundy',
+'10000.50', 'False', '15000,75', 'Tony Soprano', '28-05-1995', "")""")
+cur.execute("""insert into cars values ('03', 'Volkswagon', 'Golf', 'Black', '2021', 'YX46 SZZ', 'London', 'Obama',
+'10000.50', 'False', '15000,75', 'Tony Soprano', '27-05-1995', "")""")
+
 #cur.execute("select * from cars where licence_plate is 'YX26 SZZ'")
 
 
