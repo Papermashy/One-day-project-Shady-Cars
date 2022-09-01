@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search a car - Shady's</title>
+    <link rel="icon" type="image/x-icon" href="shady-favicon.png">
+    <title>Add a car - Shady's</title>
     <nav class="navbar">
         <!-- LOGO -->
         <div class="logo">
@@ -14,9 +15,9 @@
         <ul class="nav-links">
           <!-- NAVIGATION MENUS -->
           <div class="menu">
-            <li><a href="/search_page.html">Search Cars</a></li>
-            <li><a href="/add_a_car.html">New Car</a></li>
-            <li><a href="/sell_a_car.html">Sell Car</a></li>
+            <li><a href="search_page.html">Search Cars</a></li>
+            <li><a href="add_a_car.html">New Car</a></li>
+            <li><a href="sell_a_car.html">Sell Car</a></li>
           </div>
         </ul>
         </nav>
@@ -28,12 +29,52 @@
 </head>
 <body class="better-font body-color">
     <div class="content">
-    <br>
-    <h1>Enter a license plate</h1>
-    <br>
-    <input type="text">
-    <button class="button">Get Car</button>
-    <button class="button">Get All Cars</button>
+        <br>
+        <h1>Add a new car</h1>
+        <br>
+        <div class="container">
+            <div>
+                Licence Plate
+                <input type="text" id="license_plate">
+            </div>
+            <div>
+                Make
+                <input type="text" id="make">
+            </div>
+            <div>
+                Model
+                <input type="text" id="model">
+            </div>
+            <div>
+                Colour
+                <input type="text" id="colour">
+            </div>
+            <div>
+                Year
+                <input type="text" id="year">
+            </div>
+            <div>
+                Location
+                <input type="text" id="location">
+            </div>
+            <div>
+                Bought From
+                <input type="text" id="bought_from">
+            </div>
+            <div>
+                Purchase Price (£)
+                <input type="text" id="purchase_price">
+            </div>
+        </div>
+        <button class="button">Add Car</button>
+        <script>
+
+            function add_a_car(){
+
+            }
+
+            
+        </script>
     </div>
 </body>
 </html>
