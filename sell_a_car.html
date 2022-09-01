@@ -55,10 +55,20 @@
     <script>
 
         function sell_a_car(){
+            document.getElementById("success").value = ""
+            license_plate = document.getElementById("license_plate").value;
+            selling_price = document.getElementById("selling_price").value;
+            sold_to = document.getElementById("sold_to").value;
+            date_of_sale = document.getElementById("date_of_sale").value;
+
+            // DO API STUFF
+
 
         }
 
+            document.getElementById("success").value = "Car successfully marked as sold"
 
     </script>
+    <p id="success"></p>
 </body>
 </html>
